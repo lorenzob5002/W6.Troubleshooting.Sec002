@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding for proper text rendering -->
+    <meta charset="UTF-8">
+    <!-- Ensures proper rendering on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title displayed in the browser tab -->
+    <title>Simple WebAudio Synth</title>
+    <!-- Link to the external JavaScript file, using module type for ES6 compatibility -->
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <!-- Main heading of the page -->
+    <h1>Simple WebAudio Synth</h1>
+
+    <!-- Button to start/stop the oscillator -->
+    <div>
+        <button id="toggle">Play</button>
+    </div>
+
+    <!-- Gain control: A range slider to adjust the volume (in decibels) -->
+    <div>
+        <label for="gain">Gain:</label>
+        <input type="range" id="gain" min="-70" max="0" step="0.01" value="-70">
+    </div>
+
+    <!-- Dropdown menu to select waveform type -->
+    <div>
+        <label for="waveform">Waveform:</label>
+        <select id="waveform">
+            <option value="sine">Sine</option>
+            <option value="square">Square</option>
+            <option value="sawtooth">Sawtooth</option>
+            <option value="triangle">Triangle</option>
+        </select>
+    </div>
+</body>
+</html>
